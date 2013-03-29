@@ -1,0 +1,39 @@
+<script src="/ckeditor/ckeditor.js"> </script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	});
+	function add_file () {
+		var obj = document.getElementById('file_area'),
+			file = document.createElement('input');
+		file.name = "file[]";
+		file.type = "file";
+		obj.appendChild(file); //при нажати на кнопку "+" добавится поле для фотографии
+	}
+	function dimg (t) {
+		$("input[value='"+$(t).attr('src')+"']").remove();  //удаление input'а
+		$(t).remove();
+	}
+</script>
+<form enctype="multipart/form-data" method="POST" id="newsform">  <!-- по id применяются стили -->
+	<h1><?=$fname?> товар</h1>
+	<label for="name">Название</label>
+	<input type="text" name="name" id="name" value="<?=$name?>">
+	<label for="price">Цена</label>
+	<input type="text" name="price" id="price" value="<?=$price?>">
+	<label for="desc">Описание</label>
+	<textarea name="desc" id="desc" class="ckeditor"><?=$desc?></textarea> <!--подключение ККЭдитора(редактора текста)-->
+	<div id="file_area">
+		<?
+			if (is_array($files) && count($files) > 0) {
+				foreach ($files as $file) {?>
+					<img src="<?=$file?>" width="50" align="center" onclick="dimg(this)" style="cursor:pointer;">
+					<input type="hidden" name="files[]" value="<?=$file?>">
+				<?}
+			}
+		?>
+		<input type="file" name="file[]">
+		<button onclick="add_file(); return false;">+</button>
+	</div>
+	<button>Сохранить</button> <button type="reset">Очистить</button>
+</form>

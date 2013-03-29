@@ -1,0 +1,11 @@
+<script src="/ckeditor/ckeditor.js"> </script>
+<form method="POST" id="newsform">
+	<h1><?=$fname?> новость</h1>
+	<label for="name">Название</label>
+	<input type="text" name="name" id="name" value="<?=$name?>">
+	<label for="desc">Описание</label>
+	<textarea name="desc" id="desc"><?=$desc?></textarea>
+	<label for="news">Новость целиком</label>
+	<textarea name="news" id="news" class="ckeditor"><?=$news?></textarea> <!--подключение ККЭдитора(редактора текста)-->
+	<button>Сохранить</button> <button type="reset">Очистить</button>
+</form>

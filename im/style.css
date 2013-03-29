@@ -1,0 +1,191 @@
+* {
+	font-family:Georgia, "Times New Roman", Times, serif; /*общий шрифт*/
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	width: 800px;
+	height: 200px;
+	cursor: pointer;
+	background-image: url(logo.png); /*логотип*/
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 10px; 
+}
+nav {
+	width: 800px;
+	text-align: center;
+	margin: 10px auto;
+}
+nav a {
+	display: inline-block;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #fda201 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fda201)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#fda201 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#fda201 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#fda201 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#fda201 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fda201',GradientType=0 ); /* IE6-9 */
+	color: #000000; /*цвет ссылок*/
+	padding: 10px;
+	border-radius: 10px; /*закрыгление углов*/
+	margin-right: 10px;
+	text-decoration: none; 
+
+}
+nav a:last-child {
+	margin-right: 0;
+}
+article {
+	width: 778px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #fda201;
+	border-radius: 10px;
+}
+#login {
+	width: 250px;
+	margin: 0 auto;
+	text-align: center;
+}
+#login h1 {
+	font-size: 16px;
+	text-align: center;
+}
+#login input {
+	width: 150px;
+	display: block;
+	margin: 5px auto;
+}
+#login input[type="checkbox"] {
+	width: 13px;
+	margin: 5px 50px 5px 0px;
+	float: right;
+}
+#login label[for="remember"] {
+	display: block;
+	float: left;
+	margin: 1px 0px 5px 50px;
+}
+#login button {
+	display: block;
+	margin: 0 auto;
+}
+.clear {
+	width: 100%;
+	height: 1px;
+	display: block;
+	clear: none;
+	float: left;
+}
+nav a.active {
+	font-weight: bold;
+}
+#adminnav {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	width: 100%;
+}
+
+#adminnav li {
+	display: inline-block; /*поставили по горизонатли*/
+	margin: 0 5px;
+}
+a {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+#newsform {
+	width: 429px;
+	margin: 0 auto;
+	text-align: center;
+}
+#newsform label {
+	display: inline-block;
+	width: auto;
+	text-align: right;
+	vertical-align: top;
+}
+#newsform textarea, #newsform input {
+	width: 429px;
+}
+#newsform textarea {
+	height: 100px;
+}
+#newsform h1 {
+	text-align: center; /*выравнивание по центру*/
+}
+.name { /*имя цветка в каталоге*/
+	text-align: center;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 24;
+}
+.pic {
+	text-align: center;
+}
+.price {
+	text-align: center;
+	font-size: 18;
+	text-decoration: underline;
+}
+.pagenav a{
+	font-weight: bold;
+	display: inline-block;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #fda201 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fda201)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#fda201 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#fda201 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#fda201 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#fda201 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fda201',GradientType=0 ); /* IE6-9 */
+	color: #000000; /*цвет ссылок*/
+	padding: 10px;
+	border-radius: 10px;
+	margin-right: 10px;
+	text-decoration: none; 
+}
+.pagenav a:hover {
+	text-decoration: underline; /*при наведении подчеркивается ссылка*/
+}
+.pagenav {
+	text-align: center;
+}
+applet {
+	display: block;
+	margin: 10px auto;
+}
+.indent{
+text-indent: 20px;
+padding: 3px 20px;
+}
+.zagal { 
+	text-align: center;
+	margin: 5px;
+	font-size: 24;
+}
+.nameo { /*оранжевое имя на главной*/
+	text-align: center;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 24;
+	color: #FFA501;
+}
+#map {
+	display: none;
+	width: 600px;
+	margin: 0 auto;
+}
+.namemap {
+	font-weight: bold;
+	font-size: 18;
+	color: #FFA501;
+}

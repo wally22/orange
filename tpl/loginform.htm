@@ -1,0 +1,12 @@
+<div id="login">
+	<h1>Вход</h1>
+	<?=($error)?'<div class="error">Неверный E-mail или пароль</div>':""?> <!-- вывод ошибки -->
+	<form method="POST" action="/admin.php" id="loginform">
+		<input type="text" name="user" placeholder="E-mail">
+		<input type="password" name="pass" placeholder="Пароль">
+		<input type="checkbox" name="remember" value="1" id="remember">		<!--галочка запомнить меня-->
+		<label for="remember">Запомнить ?</label>
+		<div class="clear"></div>											<!--отчистка строки для кнопки "вход"-->
+		<button>Вход</button>
+	</form>
+</div>
